@@ -1,0 +1,48 @@
+<%- include("top") -%>
+
+<div class="centerbox">
+  <% if(logs.length!=0) { %>
+    <!-- Creating Table with these headers -->
+
+  <table class='centerbox'>
+    <tr>
+      <th>Username</th>
+      <th>Amount</th>
+      <th>Year</th>
+      <th>Total Amount</th>
+    </tr>
+    <% logs.forEach(function(log){ %>
+    <tr>
+      <td>
+        <% log.obj.forEach(function(user){ %>
+          <!-- Creating Table with these headers -->
+
+        <table class='inner'>
+          <tr>
+            <td><%= user.name %></td>
+          </tr>
+        </table>
+        <% }) %>
+      </td>
+      <td>
+        <% log.obj.forEach(function(user){ %>
+        <table class='inner'>
+          <tr>
+            <td><%= user.amt %></td>
+          </tr>
+        </table>
+        <% }) %>
+      </td>
+      <td class='inner'><%= log._id %></td>
+      <td class='inner'><%= log.sum %></td>
+    </tr>
+    <% }) %>
+  </table>
+  <% } else { %>
+  <p>
+    No Record Found..!!
+  </p>
+  <% }%>
+</div>
+
+<%- include("bottom") -%>

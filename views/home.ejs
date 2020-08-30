@@ -1,0 +1,52 @@
+<!--Including The Header File here -->
+<%- include("top") -%>
+
+<!-- Creating Form -->
+<form action="/" method='post' enctype="multipart/form-data">
+  <!--  General -->
+  <div class="fm">
+    <!--Heading of the form-->
+    <h2 class="topic complete"> Data Entry Form </h2>
+    <div class="">
+      <!-- Taking CSV File as Input -->
+      <input name='csvfile' class='file' id='fname' type="file" accept='.csv' />
+      <p id='fnc'></p>
+      <!-- If error will be generated then will print this -->
+      <p style='color:red;font-size:18px;'><%= error %></p>
+      <!-- If no error will be generated then will print this -->
+      <p style='color:green;font-size:18px;'><%= response %></p>
+    </div>
+
+    <div class="power complete">
+      <!-- Upload Button for file to get uploaded -->
+      <button class="complete" type='submit'>Upload</button>
+    </div>
+  </div>
+</form>
+
+<form action="/view" method="get">
+  <div class="power complete">
+    <button class="complete" type='submit'>View Data</button>
+  </div>
+</form>
+
+<script type="text/javascript">
+  var input = document.getElementById('fname');
+  var infoArea = document.getElementById('fnc');
+
+  input.addEventListener('change', showFileName);
+
+  function showFileName(event) {
+
+    // the change event gives us the input it occurred in
+    var input = event.srcElement;
+
+    // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+    var fileName = input.files[0].name;
+
+    // use fileName however fits your app best, i.e. add it into a div
+    infoArea.textContent = 'File name: ' + fileName;
+  }
+</script>
+
+<%- include("bottom") -%>

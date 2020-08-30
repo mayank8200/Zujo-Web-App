@@ -1,0 +1,44 @@
+<%- include("top") -%>
+
+<div class="centerbox">
+  <!-- Form will get redirected to /gbn after getting submitted -->
+  <form action="/gbn" method="get">
+    <div class="power half">
+      <button class="complete" type='submit'>Group by User</button>
+    </div>
+  </form>
+  <!-- Form will get redirected to /gby after getting submitted -->
+  <form action="/gby" method="get">
+    <div class="power half">
+      <button class="complete" type='submit'>Group by year</button>
+    </div>
+  </form>
+</div>
+
+<div class="centerbox">
+  <% if(users.length!=0) { %>
+    <!-- Creating Table with these headers -->
+  <table class='centerbox'>
+    <tr>
+      <th>Username</th>
+      <th>Amount</th>
+      <th>Date</th>
+
+    </tr>
+    <% users.forEach(function(item){ %>
+    <tr>
+      <td><%= item.username%></td>
+      <td><%= item.amount %></td>
+      <td><%= item.year +'-'+ item.month +'-'+ item.day %></td>
+    </tr>
+    <% }) %>
+  </table>
+  <% } else { %>
+  <p>
+    <!-- If the excel or csv file is empty -->
+    [Empty Database] Please Populate your dataset!!
+  </p>
+  <% }%>
+</div>
+
+<%- include("bottom") -%>

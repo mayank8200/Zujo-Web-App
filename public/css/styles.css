@@ -1,0 +1,152 @@
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.centerbox{
+      width: 80%;
+       margin: 0 auto;
+       padding: 20px;
+}
+
+.centerbox th{
+  color:#fcd434;
+  border:1px solid white;
+  font-size: 28px;
+  padding: 8px;
+}
+.centerbox td{
+  color:white;
+  border:1px solid white;
+}
+
+p{
+  color: #fcd434;
+}
+
+.complete {
+  width: 100%;
+  float: left;
+  padding: 1em;
+}
+
+.half {
+  width: 50%;
+  float: left;
+  padding: 1em;
+}
+
+
+body {
+  text-align: center;
+  font-family: 'Lato', 'sans-serif';
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Fjalla One";
+}
+.file {
+    width: 95%;
+    height: 200px;
+    background: black;
+    padding: 4px;
+    border: 1px dashed #fcd434;
+    position: relative;
+    cursor: pointer;
+}
+
+.inner{
+width: 100%;
+}
+
+.inner td{
+  border:none;
+}
+
+.file::before {
+    content: '';
+    position: absolute;
+    background: black;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.file::after {
+    content: 'Drag & Drop or Click to select file';
+    position: absolute;
+    color: #fcd434;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form {
+  padding: 4em 20%;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 960px) {
+  form {
+    width: 100%;
+    padding: 2em 10%;
+  }
+}
+
+h2.topic {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: left;
+  color: #fcd434;
+  padding: 1em;
+  margin-bottom: 20px;
+}
+
+.power {
+  text-align: left;
+  position: relative;
+}
+
+.power button{
+  padding: 12px;
+  font-size: 14px;
+  border: 2px solid #808184;
+  width: 100%;
+  color: white;
+  font-family: 'Lato', 'sans-serif';
+  font-size: 16px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.power button:focus,
+.power button:hover{
+  outline: none;
+  border-color: #fcd434;
+
+}
+
+.power button {
+  cursor: pointer;
+  border: 2px solid #fcd434;
+  color: #fcd434;
+  padding: 12px 0;
+  margin: 1em 0;
+}
+.power button:hover ,.file:hover,.file:focus{
+  background-color: #fcd434;
+  color:black;
+}
