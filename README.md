@@ -31,6 +31,8 @@ containers.
 ```
 # Homepage
 ![alt text](https://i.ibb.co/CQftCww/homepage.jpg)
+# How to Upload File
+![alt text](https://i.ibb.co/NLMBJYx/Screenshot-359.png)
 # When File is Uploaded
 ![alt text](https://i.ibb.co/rwN0SmR/after-data-entry.png)
 # Data Visualisation
