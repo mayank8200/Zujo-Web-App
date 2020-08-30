@@ -30,9 +30,9 @@ containers.
 3) nodemon server.js or node.js
 ```
 # Technology Used
-[![Generic badge](https://img.shields.io/badge/<JS>-<NodeJS>-<COLOR>.svg)](https://shields.io/)<br>
-[![Generic badge](https://img.shields.io/badge/<DB>-<MongoDB>-<COLOR>.svg)](https://shields.io/)<br>
-[![Generic badge](https://img.shields.io/badge/<HTML>-<CSS>-<COLOR>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/JS-NodeJS-<COLOR>.svg)](https://shields.io/)<br>
+[![Generic badge](https://img.shields.io/badge/DB-MongoDB-<COLOR>.svg)](https://shields.io/)<br>
+[![Generic badge](https://img.shields.io/badge/HTML-CSS-<COLOR>.svg)](https://shields.io/)
 
 
 # Homepage
