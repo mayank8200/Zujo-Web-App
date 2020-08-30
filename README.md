@@ -31,7 +31,7 @@ containers.
 ```
 # Technology Used
 [![Generic badge](https://img.shields.io/badge/<JS>-<NodeJS>-<COLOR>.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/<DB>-<Mongo DB>-<COLOR>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/<DB>-<MongoDB>-<COLOR>.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/<HTML>-<CSS>-<COLOR>.svg)](https://shields.io/)
 
 
