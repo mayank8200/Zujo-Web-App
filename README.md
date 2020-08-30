@@ -1,5 +1,6 @@
 # Zujo-Web-App
 Recruitment Task for Zujo
+## Problem Statement
 ```
 Task 1 - Web
 Zujo want to create a web app which can dump and aggregate data from CSV which has
@@ -22,3 +23,5 @@ containers.
 * Be as genuine as possible.
 * Hosting it on any free hosting platform would be appreciated.
 ```
+# Homepage
+![alt text](https://i.ibb.co/CQftCww/homepage.jpg)
