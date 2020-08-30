@@ -29,6 +29,12 @@ containers.
 2) Open Git Bash and use either node or nodemon to run this app
 3) nodemon server.js or node.js
 ```
+# Technology Used
+[![Generic badge](https://img.shields.io/badge/<JS>-<NodeJS>-<COLOR>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/<DB>-<Mongo DB>-<COLOR>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/<HTML>-<CSS>-<COLOR>.svg)](https://shields.io/)
+
+
 # Homepage
 The homepage of the web app where you get an option to upload new database or either display previous data.
 
