@@ -24,6 +24,7 @@ containers.
 * Hosting it on any free hosting platform would be appreciated.
 ```
 # How To Run This Code
+[![forthebadge made-with-python](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://www.python.org/)
 ```
 1) First Download the code and navigate to the directory where the code is downloaded
 2) Open Git Bash and use either node or nodemon to run this app
